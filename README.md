@@ -4,7 +4,7 @@ This is the repository for creating a Docker Image from where you can running Je
 
 ## Jenkins Pipeline for creating the image:
 *   At first your Linux VM should contain a local docker registry on port 5000, you can use the default docker registry image for this
-*   Download ideaI<Edition>-<Version>.tar.gz to /software/intellijidea
+*   Download idea(Edition)-(Version).tar.gz to /software/intellijidea
 *   Create a Jenkins Job from provided Jenkinsfile and start it to build the image and put it to the local registry.
 
 ## JetBrains IntelliJ IDEA from Windows
