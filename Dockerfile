@@ -11,5 +11,5 @@ RUN yum -y install xterm xauth libXtst wget tar gzip which \
 && tar zxf /tmp/${SW_FILE2} --directory=ideaIU \
 && rm -f /tmp/${SW_FILE1} \
 && rm -f /tmp/${SW_FILE2}
-# CMD cd ideaIU && cd */. && cd bin && idea.sh
-CMD cd ideaIU && cd */. && cd bin && ls -la
+CMD cd ideaIU && cd */. && cd bin && ./idea.sh
+# CMD cd ideaIU && cd */. && cd bin && ls -la
