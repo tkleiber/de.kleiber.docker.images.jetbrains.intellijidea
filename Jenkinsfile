@@ -12,7 +12,7 @@ pipeline {
       steps {
         sh 'if [ ! -f $SW_FILE1 ]; then cp "$SW_DIR/$SW_FILE1" $SW_FILE1; fi'
         sh 'if [ ! -f $SW_FILE2 ]; then cp "$SW_DIR/$SW_FILE2" $SW_FILE2; fi'
-        withCredentials([usernamePassword(credentialsId: 'store.docker', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
+        withCredentials([usernamePassword(credentialsId: 'docker_hub_id', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
           sh '''docker login --username $USERNAME --password $PASSWORD
 docker build --tag tkleiber/intellijidea:$SW_VERSION --build-arg SW_FILE1=$SW_FILE1 --build-arg SW_FILE2=$SW_FILE2 .'''
         }
