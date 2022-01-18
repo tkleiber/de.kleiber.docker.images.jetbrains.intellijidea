@@ -35,6 +35,6 @@ docker build --tag tkleiber/intellijidea:$SW_VERSION --build-arg SW_FILE1=$SW_FI
     SW_VERSION = '2018.1.2'
     SW_FILE1 = 'ideaIC-2021.3.1.tar.gz'
     SW_FILE2 = 'ideaIU-2021.3.1.tar.gz'
-    SW_DIR = '/software/IntelliJ'
+    SW_DIR = '/software/saved/IntelliJ'
   }
 }
